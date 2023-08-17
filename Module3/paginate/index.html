@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pagination</title>
+    <style>
+      #app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #eee;
+        margin-top: 1em;
+        padding-top: 0.5em;
+      }
+
+      .pagination {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .pagination button {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #999;
+        border-radius: 0.2em;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Products List</h1>
+      <div>
+        <ul id="products"></ul>
+      </div>
+      <div class="pagination"></div>
+    </div>
+
+    <script src="./paginateManagement.js" type="module"></script>
+  </body>
+</html>
